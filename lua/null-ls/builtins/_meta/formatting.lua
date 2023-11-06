@@ -331,6 +331,9 @@ return {
   ruff = {
     filetypes = { "python" }
   },
+  ruff_import = {
+    filetypes = { "python" }
+  },
   rufo = {
     filetypes = { "ruby" }
   },
