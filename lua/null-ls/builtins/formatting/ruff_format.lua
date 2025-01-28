@@ -13,7 +13,7 @@ return h.make_builtin({
     filetypes = { "python" },
     generator_opts = {
         command = "ruff",
-        args = { "check", "--fix", "$FILENAME" },
+        args = { "format", "--target-version", "py312", "-n", "--stdin-filename", "$FILENAME", "-" },
         to_stdin = true,
     },
     factory = h.formatter_factory,
